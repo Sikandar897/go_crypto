@@ -1,4 +1,5 @@
 // ignore_for_file: prefer_interpolation_to_compose_strings, must_be_immutable, prefer_typing_uninitialized_variables
+
 import 'package:flutter/material.dart';
 
 import '../view/select_coin.dart';
@@ -37,14 +38,14 @@ class Item2 extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
-                  height: myHeight * 0.035, child: Image.network(item.image)),
+                  height: myHeight * 0.025, child: Image.network(item.image)),
               SizedBox(
                 height: myHeight * 0.02,
               ),
               Text(
                 item.id,
                 style:
-                    const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    const TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
               ),
               SizedBox(
                 height: myHeight * 0.01,
@@ -60,7 +61,7 @@ class Item2 extends StatelessWidget {
                                 .replaceAll('-', '')
                         : "\$" + item.priceChange24H.toStringAsFixed(2),
                     style: const TextStyle(
-                        fontSize: 16,
+                        fontSize: 10,
                         fontWeight: FontWeight.normal,
                         color: Colors.grey),
                   ),
@@ -70,7 +71,7 @@ class Item2 extends StatelessWidget {
                   Text(
                     item.marketCapChangePercentage24H.toStringAsFixed(2) + '%',
                     style: TextStyle(
-                        fontSize: 16,
+                        fontSize: 10,
                         fontWeight: FontWeight.normal,
                         color: item.marketCapChangePercentage24H >= 0
                             ? Colors.green

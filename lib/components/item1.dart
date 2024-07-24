@@ -13,7 +13,7 @@ class Item extends StatelessWidget {
     double myWidth = MediaQuery.of(context).size.width;
     return Padding(
       padding: EdgeInsets.symmetric(
-          horizontal: myWidth * 0.06, vertical: myHeight * 0.02),
+          horizontal: myWidth * 0.04, vertical: myHeight * 0.0),
       child: Container(
         child: Row(
           children: [
@@ -51,7 +51,7 @@ class Item extends StatelessWidget {
             Expanded(
               flex: 2,
               child: SizedBox(
-                height: myHeight * 0.05,
+                height: myHeight * 0.03,
                 child: Sparkline(
                   data: item.sparklineIn7D.price,
                   lineWidth: 2.0,
@@ -73,7 +73,7 @@ class Item extends StatelessWidget {
               width: myWidth * 0.04,
             ),
             Expanded(
-              flex: 2,
+              flex: 4,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [

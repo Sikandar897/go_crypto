@@ -27,19 +27,21 @@ class _SplashViewState extends State<SplashView> {
               children: [
                 Text(
                   'The Future',
-                  style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
-                Text(
-                  'Learn more about cryptocurrency, look to',
-                  style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.normal,
-                      color: Colors.grey),
+                Center(
+                  child: Text(
+                    'Learn more about cryptocurrency, look to',
+                    style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.normal,
+                        color: Colors.grey),
+                  ),
                 ),
                 Text(
                   ' the future in GO Crypto',
                   style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 16,
                       fontWeight: FontWeight.normal,
                       color: Colors.grey),
                 ),
