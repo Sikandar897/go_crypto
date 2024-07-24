@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'navigation_bar.dart';
 
 class SplashView extends StatefulWidget {
@@ -17,7 +16,7 @@ class _SplashViewState extends State<SplashView> {
     return SafeArea(
         child: Scaffold(
       backgroundColor: Colors.white,
-      body: Container(
+      body: SizedBox(
         height: myheight,
         width: mywidth,
         child: Column(
@@ -38,7 +37,7 @@ class _SplashViewState extends State<SplashView> {
                       color: Colors.grey),
                 ),
                 Text(
-                  ' the future in IO Crypto',
+                  ' the future in GO Crypto',
                   style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.normal,
@@ -51,7 +50,7 @@ class _SplashViewState extends State<SplashView> {
               child: GestureDetector(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const NaviBar()));
+                      MaterialPageRoute(builder: (context) => const NavBar()));
                 },
                 child: Container(
                   decoration: BoxDecoration(
